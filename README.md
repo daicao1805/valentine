@@ -66,8 +66,9 @@
 </head>
 <body>
     <h1>Happy Valentine&#10084;</h1>
-    <img src="https://source.unsplash.com/400x300/?love,heart" class="valentine-img" alt="Valentine">
-    <p class="message">Chúc bạn có một ngày Valentine tràn đầy yêu thương!</p>
+    <img src="[https://source.unsplash.com/400x300/?love,heart](https://cdn.pixabay.com/photo/2012/04/18/15/18/heart-37317_1280.png)" class="valentine-img" alt="Valentine">
+    <p class="message">Chúc ngừi iu của anh có một ngày Valentine tràn đầy yêu thương!</p>
+    <p class="message"> Gửi Diệp Xinh của anh muôn ngàn nụ hôn lunnnnnnnnn ạ !</p>
     <button onclick="changeMessage()">Đổi lời chúc</button>
 
     <script>
