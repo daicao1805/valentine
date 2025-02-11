@@ -307,17 +307,17 @@
         <div class="card-content">
           <!-- <div class="heart"></div> -->
           <div class="valentine-text" style="display: none">
-            <h1>Will you be my valentine?</h1>
+            <h1>Iu anh nhìu nhìu nhé bây bi?</h1>
             <img
               src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2Vna2FkeDN2NHYxenduMXVuNTJ0MmJxZjI5dG16bXhoaGJuZmoxMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26FLdmIp6wJr91JAI/giphy.gif"
               alt="please" class="please" />
           </div>
           <div class="buttons" style="display: none">
-            <button class="yes">Yes</button>
-            <button class="no">No</button>
+            <button class="yes">tất nhin rùi</button>
+            <button class="no">khum đc No</button>
           </div>
           <div class="valentine-congrats" style="display: none">
-            <h1>Congratulations!</h1>
+            <h1>chúc mừng ngừi iu!</h1>
             <p>You have a valentine now!</p>
             <img
               src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2EwcDRyYXZyNjUwb2h0ZmRnd3R3d2wzMWRvNGR0ejBnMjduaHprYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/n0IKF3qkeh671VAO45/giphy.gif"
@@ -391,7 +391,7 @@
     // const urlParams = new URLSearchParams(window.location.search);
     // const name = urlParams.get("k"); // Get the value of "name"
     const introText = document.querySelector(".text-intro");
-    introText.innerHTML = `Hello Diệp xinh của a, hè hè.`;
+    introText.innerHTML = `Hello Diệp xinh của a. kéo xún ik`;
     const engine = Matter.Engine.create();
     const world = engine.world;
 
