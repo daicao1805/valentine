@@ -86,7 +86,7 @@
         <h1>Happy Valentine&#10084;</h1>
         <p class="message">Chúc ngừi iu của anh có một ngày Valentine tràn đầy yêu thương!</p>
         <p class="message"> Gửi Diệp Xinh của anh muôn ngàn nụ hôn lunnnnnnnnn ạ !</p>
-        <button onclick="createHeart()"> Diệp xinh lung linh zô cùng tận click vào đây ik </button>
+        <button onclick="changeMessage()"> Diệp xinh lung linh zô cùng tận click vào đây ik </button>
     </div>
 
     <div>
@@ -94,7 +94,7 @@
     </div>
         
     <script>
-        function createHeart() {
+        function createHeart1() {
             const heart = document.createElement("div");
             heart.innerHTML = "&#10084;";
             heart.classList.add("heart1");
@@ -108,7 +108,8 @@
         let showPage
         function changeMessage() {
             
-            document.getElementById("valentine-div").innerHTML = "Chào buổi sáng!";
+            document.getElementById("valentine-div").innerHTML = "<h1>I Love U chụt chụt!</h1>";
+	setInterval(createHeart1, 300);
         }
 
         function createHeart() {
@@ -125,8 +126,10 @@
 
         setTimeout(() => {
             heart.remove();
-        }, 5000); // Xóa trái tim sau khi rơi xong
+        }, 5000);
     }
+
+createHeart
 
     </script>
 </body>
