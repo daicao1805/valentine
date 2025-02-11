@@ -62,7 +62,23 @@
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
             animation: fadeIn 2s ease-in-out;
         }
-        
+        .heart {
+            position: absolute;
+            color: red;
+            font-size: 20px;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-10vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -74,9 +90,7 @@
     </div>
 
     <div>
-        <div id="tsparticles"></div>
-        <!-- https://github.com/matteobruni/tsparticles -->
-        </div>
+
     </div>
         
     <script>
@@ -97,83 +111,24 @@
             document.getElementById("valentine-div").innerHTML = "Chào buổi sáng!";
         }
 
-        (async () => {
-          await loadHeartShape(tsParticles);
-        
-          await tsParticles.load("tsparticles", {
-            background: {
-              color: {
-                value: "#301A47"
-              }
-            },
-            particles: {
-              color: {
-                value: [
-                  "#FFAEBC",
-                  "#A0E7E5",
-                  "#B4F8C8",
-                  "#FBE7C6",
-                  "#FFC9AE",
-                  "#FFAEE5",
-                  "#A0C6E7",
-                  "#A0E7C2",
-                  "#B4F8EA",
-                  "#C2F8B4",
-                  "#F4FBC6",
-                  "#FBCDC6"
-                ]
-              },
-              move: {
-                angle: {
-                  offset: 0,
-                  value: 15
-                },
-                direction: "bottom",
-                enable: true,
-                outModes: {
-                  default: "out"
-                },
-                speed: 3
-              },
-              number: {
-                value: 300
-              },
-              opacity: {
-                value: 1
-              },
-              shape: {
-                type: "heart"
-              },
-              size: {
-                value: 16
-              },
-              roll: {
-                darken: {
-                  enable: true,
-                  value: 30
-                },
-                enlighten: {
-                  enable: true,
-                  value: 30
-                },
-                enable: true,
-                mode: "horizontal",
-                speed: {
-                  min: 5,
-                  max: 15
-                }
-              },
-              zIndex: {
-                value: {
-                  min: 0,
-                  max: 100
-                },
-                opacityRate: 0,
-                velocityRate: 2
-              }
-            }
-          });
-        })();
+        function createHeart() {
+        const heart = document.createElement("div");
+        heart.innerHTML = "❤️";
+        heart.classList.add("heart");
+        document.body.appendChild(heart);
+
+        const size = Math.random() * 20 + 10; // Kích thước ngẫu nhiên
+        heart.style.fontSize = `${size}px`;
+
+        heart.style.left = Math.random() * 100 + "vw"; // Vị trí ngang ngẫu nhiên
+        heart.style.animationDuration = Math.random() * 3 + 2 + "s"; // Thời gian rơi ngẫu nhiên
+
+        setTimeout(() => {
+            heart.remove();
+        }, 5000); // Xóa trái tim sau khi rơi xong
+    }
+
+    setInterval(createHeart, 200);
 
     </script>
 </body>
