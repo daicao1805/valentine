@@ -281,7 +281,7 @@
       bottom: 10px;
       left: 50%;
       transform: translateX(-50%);
-      font-size: 12px;
+      font-size: 30px;
       color: white;
     }
 
@@ -346,9 +346,9 @@
           <div class="ribbon"></div>
         </div>
       </div>
-      <div class="footer-text">Made with ❤️ by Shrikant</div>
     </div>
   </div>
+  <div class="footer-text">Trọng Đại ❤️ Ngọc Diệp</div>
 
   <script>
     function createHeart1() {
