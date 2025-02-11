@@ -69,7 +69,7 @@
         <h1>Happy Valentine&#10084;</h1>
         <p class="message">Chúc ngừi iu của anh có một ngày Valentine tràn đầy yêu thương!</p>
         <p class="message"> Gửi Diệp Xinh của anh muôn ngàn nụ hôn lunnnnnnnnn ạ !</p>
-        <button onclick="changeMessage()">Đổi lời chúc</button>
+        <button onclick="changeMessage()"> Dieep </button>
     </div>
     
 
