@@ -65,11 +65,14 @@
     </style>
 </head>
 <body>
-    <h1>Happy Valentine&#10084;</h1>
-    <img src="[https://source.unsplash.com/400x300/?love,heart](https://cdn.pixabay.com/photo/2012/04/18/15/18/heart-37317_1280.png)" class="valentine-img" alt="Valentine">
-    <p class="message">Chúc ngừi iu của anh có một ngày Valentine tràn đầy yêu thương!</p>
-    <p class="message"> Gửi Diệp Xinh của anh muôn ngàn nụ hôn lunnnnnnnnn ạ !</p>
-    <button onclick="changeMessage()">Đổi lời chúc</button>
+    <div id="valentine-div">
+        <h1>Happy Valentine&#10084;</h1>
+        <img src="[https://source.unsplash.com/400x300/?love,heart](https://cdn.pixabay.com/photo/2012/04/18/15/18/heart-37317_1280.png)" class="valentine-img" alt="Valentine">
+        <p class="message">Chúc ngừi iu của anh có một ngày Valentine tràn đầy yêu thương!</p>
+        <p class="message"> Gửi Diệp Xinh của anh muôn ngàn nụ hôn lunnnnnnnnn ạ !</p>
+        <button onclick="changeMessage()">Đổi lời chúc</button>
+    </div>
+    
 
     <script>
         function createHeart() {
@@ -83,15 +86,10 @@
             setTimeout(() => heart.remove(), 4000);
         }
         setInterval(createHeart, 300);
-
+        let showPage
         function changeMessage() {
-            const messages = [
-                "Chúc bạn một ngày Valentine ấm áp!",
-                "Hãy luôn yêu thương và hạnh phúc nhé!",
-                "Gửi đến bạn thật nhiều yêu thương!",
-                "Mong rằng bạn luôn được hạnh phúc!"
-            ];
-            document.querySelector(".message").innerText = messages[Math.floor(Math.random() * messages.length)];
+            
+            document.getElementById("valentine-div").innerHTML = "Chào buổi sáng!";
         }
     </script>
 </body>
