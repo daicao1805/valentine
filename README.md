@@ -62,7 +62,7 @@
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
             animation: fadeIn 2s ease-in-out;
         }
-        .heart {
+        .heart1 {
             position: absolute;
             color: red;
             font-size: 20px;
@@ -86,7 +86,7 @@
         <h1>Happy Valentine&#10084;</h1>
         <p class="message">Chúc ngừi iu của anh có một ngày Valentine tràn đầy yêu thương!</p>
         <p class="message"> Gửi Diệp Xinh của anh muôn ngàn nụ hôn lunnnnnnnnn ạ !</p>
-        <button onclick="changeMessage()"> Diệp xinh lung linh zô cùng tận click vào đây ik </button>
+        <button onclick="createHeart()"> Diệp xinh lung linh zô cùng tận click vào đây ik </button>
     </div>
 
     <div>
@@ -97,7 +97,7 @@
         function createHeart() {
             const heart = document.createElement("div");
             heart.innerHTML = "&#10084;";
-            heart.classList.add("heart");
+            heart.classList.add("heart1");
             heart.style.left = Math.random() * 100 + "vw";
             heart.style.animationDuration = Math.random() * 2 + 3 + "s";
             heart.style.fontSize = Math.random() * 20 + 10 + "px";
@@ -127,8 +127,6 @@
             heart.remove();
         }, 5000); // Xóa trái tim sau khi rơi xong
     }
-
-    setInterval(createHeart, 200);
 
     </script>
 </body>
